@@ -1,0 +1,7 @@
+<button
+        :disabled="disabled"
+        :type="type"
+        :class="buttonSizeClass + ' ' +  buttonThemeClass"
+        :style="{width:computedButtonWidth}">
+    <slot></slot>
+</button>

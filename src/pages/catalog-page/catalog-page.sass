@@ -1,0 +1,29 @@
+@use '../../ui/styles/variables'
+article
+  background: variables.$primary-background
+.search-form
+  width: 90%
+  margin: 20px auto
+  position: relative
+  border: 2px solid variables.$primary-dark
+  border-radius: 7px
+.search-form input
+  width: 100%
+  padding: 5px
+  font-size: clamp(14pt, 4vw, 18pt)
+  border-radius: 5px
+  border: none
+  outline: none
+.search-form button
+  position: absolute
+  top: 0
+  right: 0
+  width: 40px
+  height: 100%
+  border: none
+  background: variables.$primary-dark
+  color: variables.$primary-accent
+  font-size: larger
+  font-weight: 500
+  border-radius: 0 5px 5px 0
+  cursor: pointer
