@@ -1,6 +1,4 @@
-<template src="./book-page.html">
-
-</template>
+<template src="./book-page.html"></template>
 
 <script src="./book-page.ts">
 </script>

@@ -70,3 +70,4 @@ export default [
     "bookPrice": "1200"
 }
 ]
+

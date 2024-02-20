@@ -1,5 +1,5 @@
 <header>
-    <img @click="this.$router.go('/Main')" src="../../ui/images/logo.png" alt="">
+    <img @click="this.$router.push('/Main')" src="../../ui/images/logo.png" alt="">
 
     <nav :class="{collapsed:!openMenu, expanded:openMenu}">
         <router-link to="/Main" :class="{activeLink:path==='/Main'}">Главная</router-link>

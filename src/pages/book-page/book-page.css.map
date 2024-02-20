@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"book-page.css"}
+{"version":3,"sourceRoot":"","sources":["book-page.sass","../../ui/styles/variables.sass"],"names":[],"mappings":"AAEA;EACE,YCDmB;EDEnB;;;AACF;EACE;EACA;;;AACF;EACE;EACA;;AACA;EACE;EACA;;;AACJ;EACE,OCfa","file":"book-page.css"}
