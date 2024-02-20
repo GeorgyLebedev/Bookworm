@@ -1,3 +1,24 @@
+.book-page {
+  background: #efdecd;
+  padding: 10px;
+}
 
+.book-container {
+  display: flex;
+  gap: 20px;
+}
+
+.book-hover {
+  max-height: 600px;
+  height: 600px;
+}
+.book-hover img {
+  height: 100%;
+  object-fit: cover;
+}
+
+h2, h3, h4 {
+  color: #723b23;
+}
 
 /*# sourceMappingURL=book-page.css.map */
