@@ -1,0 +1,105 @@
+html, body, div, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption,
+article, aside, canvas, details, embed,
+figure, figcaption, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, div, input, textarea, img, svg, form {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Cocomat";
+  src: url("/src/ui/fonts/Cocomat-Heavy.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cocomat";
+  src: url("/src/ui/fonts/Cocomat-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cocomat";
+  src: url("/src/ui/fonts/Cocomat.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cocomat";
+  src: url("/src/ui/fonts/Cocomat-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cocomat";
+  src: url("/src/ui/fonts/Cocomat-UltraLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  font-family: Cocomat;
+}
+
+.svg-stroke-white {
+  stroke: white;
+}
+
+.svg-stroke-black {
+  stroke: black;
+}
+
+.svg-fill-white {
+  fill: white;
+}
+
+.svg-fill-black {
+  fill: black;
+}
+
+#app {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+/*# sourceMappingURL=common.css.map */

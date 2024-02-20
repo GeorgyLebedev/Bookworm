@@ -1,0 +1,80 @@
+article {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #efdecd;
+  background-size: cover;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #723b23;
+}
+
+p {
+  padding-block: 5px;
+  text-align: justify;
+  font-size: clamp(14pt, 4vw, 18pt);
+}
+p.text1 {
+  grid-area: text1;
+}
+p.text2 {
+  grid-area: text2;
+}
+
+img {
+  object-fit: contain;
+  border: 10px solid white;
+  border-radius: 25px;
+}
+img.photo1 {
+  grid-area: photo1;
+}
+img.photo2 {
+  grid-area: photo2;
+}
+
+.description {
+  align-items: center;
+  justify-items: center;
+  display: grid;
+}
+
+@container (width>900px) {
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+  .description {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "text1 photo1" "photo2 text2";
+    padding-inline: 20px;
+  }
+  .top-content {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@container (width<=900px) {
+  img {
+    width: 90%;
+    max-width: 500px;
+  }
+  .top-content {
+    width: 100%;
+  }
+  .description {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "text1" "photo1" "text2" "photo2";
+    gap: 20px;
+    padding-inline: 10px;
+  }
+}
+
+/*# sourceMappingURL=main-page.css.map */

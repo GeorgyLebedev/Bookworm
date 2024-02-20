@@ -1,0 +1,51 @@
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  border: none;
+}
+
+.button-light {
+  background: #fadbc8;
+  color: #723b23;
+}
+
+.button-alt {
+  background: #F4A460;
+  color: white;
+}
+
+.button-dark {
+  background: #723b23;
+  color: #fadbc8;
+}
+
+.button-small {
+  font-size: 12pt;
+  margin: 5px;
+  padding-block: 5px;
+  padding-inline: 5px;
+  border-radius: 5px;
+}
+
+.button-medium {
+  font-size: 14pt;
+  margin: 5px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 10px;
+}
+
+.button-large {
+  font-size: 18pt;
+  margin: 15px;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=button-component.css.map */

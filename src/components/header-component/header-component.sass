@@ -1,0 +1,84 @@
+@use '../../ui/styles/variables'
+header
+  container-type: inline-size
+  background: variables.$primary-light
+  width: 100vw
+  display: flex
+  justify-content: space-between
+  padding-right: 20px
+  height: 50px
+  position: relative
+  z-index: 2
+  align-items: center
+  font-size: larger
+
+a
+  margin-inline: 5px
+  text-decoration: none
+  color: white
+  font-weight: 500
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  &.activeLink
+    color: variables.$primary-dark
+  &.activeLink::before
+    border-bottom: 2px solid variables.$primary-dark
+  &:not(.activeLink):hover::before
+    animation: shrink 0.3s forwards
+    border-bottom: 2px solid white
+
+img
+  height: 100%
+  width: auto
+  object-fit: contain
+  background: variables.$primary-light
+  padding-inline: 10px
+  padding-block: 5px
+  cursor: pointer
+  z-index: 3
+.burger-menu
+  height: 50px
+  cursor: pointer
+  z-index: 3
+
+
+
+@container (width>900px)
+  .burger-menu
+    display: none
+  nav.expanded
+    display: none
+  nav.collapsed
+    width: clamp(500px, 40%, 700px)
+    display: flex
+    justify-content: space-between
+@container (width<900px)
+  .burger-menu
+    display: block
+  nav.collapsed
+    display: none
+  nav.expanded
+    display: flex
+    position: absolute
+    top: 0
+    left: 0
+    background: variables.$primary-light
+    width: 100vw
+    height: 100vh
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    font-size: clamp(30px, 5vw, 50px)
+    gap: clamp(30px, 5vw, 50px)
+    z-index: 2
+@keyframes shrink
+  from
+    transform: scaleX(0.1)
+  to
+    transform: scaleX(1.01)
