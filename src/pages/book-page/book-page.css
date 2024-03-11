@@ -1,5 +1,9 @@
+h2, h3, h4 {
+  color: #723b23;
+}
+
 .book-page {
-  background: #efdecd;
+  background: #faebe1;
   padding: 10px;
 }
 
@@ -17,8 +21,10 @@
   object-fit: cover;
 }
 
-h2, h3, h4 {
-  color: #723b23;
+.book-action-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=book-page.css.map */

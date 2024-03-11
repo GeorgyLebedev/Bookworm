@@ -2,7 +2,21 @@
     <form class="search-form">
         <input type="search" placeholder="Введите название книги или автора...">
         <button type="submit" @click.prevent>
-            >>
+            <svg class="svg-fill-white" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_iconCarrier"> <path d="m 6.5 0 c -3.578125 0 -6.5 2.921875 -6.5 6.5 s 2.921875 6.5 6.5 6.5 c 1.429688 0 2.753906 -0.46875 3.828125 -1.257812 l 3.945313 3.945312 c 0.957031 0.9375 2.363281 -0.5 1.40625 -1.4375 l -3.929688 -3.929688 c 0.785156 -1.074218 1.25 -2.394531 1.25 -3.820312 c 0 -3.578125 -2.921875 -6.5 -6.5 -6.5 z m 0 2 c 2.496094 0 4.5 2.003906 4.5 4.5 s -2.003906 4.5 -4.5 4.5 s -4.5 -2.003906 -4.5 -4.5 s 2.003906 -4.5 4.5 -4.5 z m 0 0"/> </g>
+            </svg>
         </button>
     </form>
+    <section class="genre-buttons">
+        <div class="genre-button" v-for="(value,key) in CATEGORIES_NAMES" :class="{'selected-genre-button':selectedCategory===key}" @click="selectedCategory=key">
+            <input type="radio" name="genreGroup" v-model="selectedCategory" hidden>
+            <label>{{value}}</label>
+        </div>
+    </section>
+    <section class="books-by-categories" v-for="value in booksInCategory">
+        <h1>{{value}}</h1>
+        <slider-component :books-array="BOOKS"></slider-component>
+    </section>
 </article>

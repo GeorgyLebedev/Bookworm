@@ -1,5 +1,6 @@
 @use "../../ui/styles/variables"
-
+h2, h3, h4
+  color: variables.$primary-dark
 .book-page
   background: variables.$primary-background
   padding: 10px
@@ -12,5 +13,8 @@
   img
     height: 100%
     object-fit: cover
-h2, h3, h4
-  color: variables.$primary-dark
+
+.book-action-buttons
+  display: flex
+  flex-direction: row
+  gap: 10px

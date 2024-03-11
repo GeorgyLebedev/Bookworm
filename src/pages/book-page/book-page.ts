@@ -1,5 +1,5 @@
 import {computed, defineComponent, onMounted} from "vue";
-import BOOKS_TEMP from "@/modules/interfaces/BOOKS_TEMP";
+import BOOKS_TEMP from "@/modules/const/BOOKS";
 import {useRoute} from "vue-router";
 import iBook from "@/modules/interfaces/iBook"
 import buttonComponent from "@/components/button-component/button-component.vue";

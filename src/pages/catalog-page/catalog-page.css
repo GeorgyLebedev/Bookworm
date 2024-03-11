@@ -1,5 +1,13 @@
 article {
-  background: #efdecd;
+  background: #faebe1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #723b23;
 }
 
 .search-form {
@@ -12,8 +20,9 @@ article {
 
 .search-form input {
   width: 100%;
-  padding: 5px;
-  font-size: clamp(14pt, 4vw, 18pt);
+  font-weight: 500;
+  padding: 10px;
+  font-size: 14pt;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -28,10 +37,41 @@ article {
   border: none;
   background: #723b23;
   color: #F4A460;
-  font-size: larger;
-  font-weight: 500;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
+}
+.search-form button > svg {
+  margin-top: 50%;
+  transform: translateY(-25%);
+  width: 20px;
+  height: 20px;
+}
+
+.genre-buttons {
+  font-size: 14pt;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.genre-button {
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.genre-button label {
+  cursor: pointer;
+  font-weight: 500;
+  color: #723b23;
+}
+
+.selected-genre-button {
+  background: #723b23;
+}
+.selected-genre-button label {
+  color: #deaa88;
 }
 
 /*# sourceMappingURL=catalog-page.css.map */

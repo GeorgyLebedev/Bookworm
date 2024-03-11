@@ -78,6 +78,7 @@ table {
 * {
   font-family: Cocomat;
   outline: none;
+  box-sizing: border-box;
 }
 
 .svg-stroke-white {

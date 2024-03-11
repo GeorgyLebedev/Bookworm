@@ -27,7 +27,6 @@ button {
 
 .button-small {
   font-size: 12pt;
-  margin: 5px;
   padding-block: 5px;
   padding-inline: 5px;
   border-radius: 5px;
@@ -35,7 +34,6 @@ button {
 
 .button-medium {
   font-size: 14pt;
-  margin: 5px;
   padding-block: 5px;
   padding-inline: 10px;
   border-radius: 10px;
@@ -43,7 +41,6 @@ button {
 
 .button-large {
   font-size: 16pt;
-  margin: 10px;
   padding-block: 15px;
   padding-inline: 15px;
   border-radius: 15px;
