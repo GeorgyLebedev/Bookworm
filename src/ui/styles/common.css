@@ -75,6 +75,45 @@ table {
   font-weight: 300;
   font-style: normal;
 }
+html {
+  font-size: clamp(14pt, 1.25vw, 16pt);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.75rem;
+  padding-block: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-block: 1.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-block: 1.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+  padding-block: 1.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  padding-block: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  padding-block: 0.75rem;
+}
+
 * {
   font-family: Cocomat;
   outline: none;
@@ -95,6 +134,10 @@ table {
 
 .svg-fill-black {
   fill: black;
+}
+
+.display-contents {
+  display: contents;
 }
 
 #app {

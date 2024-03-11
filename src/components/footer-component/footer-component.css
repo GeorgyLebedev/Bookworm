@@ -41,12 +41,12 @@ a {
   font-size: 40pt;
 }
 
-.footer-small-icon, .footer-medium-icon {
+.contacts-icon, .socials-icon {
   width: auto;
   fill: #723b23;
 }
 
-.footer-medium-icon {
+.socials-icon {
   height: 40px;
   cursor: pointer;
 }
@@ -76,7 +76,7 @@ a {
     background: #faebe1;
     border-radius: 5px;
   }
-  .footer-small-icon {
+  .contacts-icon {
     height: 20px;
   }
 }
@@ -89,7 +89,7 @@ a {
     gap: 10px 0px;
     grid-template-areas: "socials-container" "contacts-container" "copyright-container ";
   }
-  .footer-small-icon {
+  .contacts-icon {
     height: 40px;
   }
   .contacts-container {

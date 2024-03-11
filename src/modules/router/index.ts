@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import mainPage from "@/pages/main-page/main-page.vue";
 import catalogPage from "@/pages/catalog-page/catalog-page.vue";
 import bookPage from "@/pages/book-page/book-page.vue";
+import aboutPage from "@/pages/about-page/about-page.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -21,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Book/:id',
     name: "Book",
     component: bookPage
+  },
+  {
+    path: '/About',
+    name: "About",
+    component: aboutPage
   }
 /*  {
     path: '/about',

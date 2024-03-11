@@ -1,0 +1,44 @@
+@use "../../ui/styles/variables"
+a, h4
+  color: variables.$primary-dark
+h4
+  padding-left: 20px
+.about-page
+  background: variables.$primary-background
+  padding-bottom: max(5%,50px)
+.contacts-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 100%
+  margin-bottom: 50px
+.city-name
+  font-weight: 600
+
+.contacts-text
+  background: variables.$primary-light
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  width: min-content
+  padding: 10px
+  height: 400px
+  gap: 5px
+  font-weight: 500
+  color: variables.$primary-dark
+.contacts
+  white-space: nowrap
+  font-size: large
+  align-items: center
+  gap: 5px
+  display: flex
+  padding: 10px
+  background: variables.$primary-background
+  border-radius: 5px
+.contacts-icon
+  height: 20px
+  width: auto
+  fill: variables.$primary-dark
+#contactMap
+  width: 100%

@@ -1,0 +1,16 @@
+<section class="from-container">
+    <form @submit.prevent>
+        <span v-for="field in fields" class="display-contents">
+            <label>{{ field.fieldName }}:</label>
+            <input v-if="field.fieldType.toLowerCase()!=='textarea'" :placeholder="field.fieldName">
+	    <textarea v-else :placeholder="field.fieldName"></textarea>
+            </span>
+	<button-component
+		:width="'min'"
+		:theme="'dark'"
+		:type="'submit'"
+		@click="$emit('submitForm')">
+	    Отправить
+	</button-component>
+    </form>
+</section>
